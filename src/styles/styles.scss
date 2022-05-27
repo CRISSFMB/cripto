@@ -1,0 +1,12 @@
+@import './base/normalize.scss';
+@import './variables/variables.scss';
+@import './mixins/mixins.scss';
+@import './base/base.scss';
+@import './helpers/helpers.scss';
+@import './utils/utils.scss';
+@import '../components/header/header.scss';
+@import '../components/header/nav/nav.scss';
+@import '../components/header/buttons/buttons.scss';
+@import '../components/header/nav/avatar/avatar.scss';
+@import '../components/header/nav/icon-alert/iconAlert.scss';
+@import '../components/sidebar/side-bar.scss';

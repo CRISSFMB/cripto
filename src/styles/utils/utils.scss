@@ -1,0 +1,37 @@
+//container
+.content-container {
+  width: 90%;
+  max-width: 1800px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+//buttons
+
+.btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 13px;
+  border: none;
+  color: $blue;
+  background: #2c2f33;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: --2px -2px 7px 2px #3b4451, 6.22302px 6.22302px 18.6691px #000000;
+  transition: transform 0.4s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  &:hover {
+    transform: scale(1.15);
+    color: white;
+  }
+}
+
+.btn--icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 12rem;
+  padding: 0;
+}

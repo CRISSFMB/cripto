@@ -1,0 +1,15 @@
+.wrapper-button {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 91%;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    width: 20rem;
+  }
+  @include desktop {
+    width: 30rem;
+  }
+}

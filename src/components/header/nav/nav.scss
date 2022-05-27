@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 130px;
+  align-items: center;
+  justify-content: space-around;
+  @include tablet {
+    flex-direction: row;
+  }
+}

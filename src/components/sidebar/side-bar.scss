@@ -1,0 +1,40 @@
+.side-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #2c2f33;
+  box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+    6.22302px 6.22302px 18.6691px #000000;
+  @include tablet {
+    flex-direction: column;
+    width: 70px;
+    margin-top: 1rem;
+  }
+  @include desktop {
+    margin-top: 4rem;
+  }
+}
+
+.wrapper-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  &__icon {
+    padding: 1rem;
+    border-radius: 12rem;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+      6.22302px 6.22302px 18.6691px #000000;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+    height: 600px;
+    width: 80%;
+  }
+}

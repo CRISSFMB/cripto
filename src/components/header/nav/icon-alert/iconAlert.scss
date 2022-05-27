@@ -1,0 +1,14 @@
+.icon-alert {
+  width: 30px;
+  height: 30px;
+  background: #2c2f33;
+  border-radius: 50%;
+  box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+    6.22302px 6.22302px 18.6691px #000000;
+  transition: box-shadow 2s ease;
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: -6.22302px -6.22302px 18.6691px rgb(239, 233, 32),
+      6.22302px 6.22302px 18.6691px rgb(239, 233, 32);
+  }
+}
