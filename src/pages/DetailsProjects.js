@@ -1,7 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Header from '../components/header/Header';
-import Sidebar from '../components/sidebar/Sidebar';
-import Aside from '../components/Aside';
+import Aside from '../components/Dashboard/aside/Aside';
 import MainDetail from '../components/MainDetail';
 import Statistics from '../components/Statistics';
 import Description from '../components/Description';
@@ -15,12 +13,6 @@ export default function DetailsProjects(props) {
   return (
     <>
       <div>
-        <div>
-          <Header />
-        </div>
-        <div>
-          <Sidebar />
-        </div>
         <div>
           <Aside info_aside={filter_info} />
         </div>

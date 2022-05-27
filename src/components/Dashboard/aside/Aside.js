@@ -10,12 +10,10 @@ export default function Aside(props) {
   };
 
   return (
-    <>
-      <div>
-        <h5>Alexa-Rank</h5>
-        {ListItems()}
-        <button>see more</button>
-      </div>
-    </>
+    <div className="aside">
+      <h5 className="aside__title">Alexa-Rank</h5>
+      <div className="aside-grid-items">{ListItems()}</div>
+      <button className="btn aside__btn">see more</button>
+    </div>
   );
 }

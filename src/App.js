@@ -2,7 +2,6 @@ import Dashboard from './pages/Dashboard';
 import DetailsProjects from './pages/DetailsProjects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import Aside from './components/Aside';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 
@@ -81,19 +80,21 @@ function App() {
     <Router>
       <div className="content-container">
         <Header />
-        <Sidebar />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Dashboard info_dashboard={dashboardRender} />}
-          />
-          <Route
-            exact
-            path="/details/:cripto"
-            element={<DetailsProjects info_detail={detailRender} />}
-          />
-        </Routes>
+        <div className="dashboard-grid">
+          <Sidebar />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Dashboard info_dashboard={dashboardRender} />}
+            />
+            <Route
+              exact
+              path="/details/:cripto"
+              element={<DetailsProjects info_detail={detailRender} />}
+            />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

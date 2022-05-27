@@ -8,10 +8,6 @@
   @include tablet {
     flex-direction: column;
     width: 70px;
-    margin-top: 1rem;
-  }
-  @include desktop {
-    margin-top: 4rem;
   }
 }
 
@@ -19,7 +15,7 @@
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   &__icon {
     padding: 1rem;

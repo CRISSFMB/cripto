@@ -1,0 +1,7 @@
+.cripto-list {
+  display: grid;
+  @include tablet {
+    height: 60rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
