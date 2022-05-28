@@ -8,10 +8,12 @@
   margin-right: auto;
   margin-left: auto;
   @include tablet {
-    grid-column: 2 / 4;
+    grid-column: 1 / 5;
     width: 63%;
   }
   @include desktop {
+    grid-row: 7 / 10;
+    grid-column: 3 / 9;
     margin-top: 0;
   }
 }

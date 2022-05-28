@@ -1,11 +1,14 @@
 .cripto-list {
+  grid-column: 1 / 5;
   @include tablet {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 19px;
   }
 
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
-    height: 46rem;
+    grid-row: 2 / 7;
+    grid-column: 2 / 7;
   }
 }

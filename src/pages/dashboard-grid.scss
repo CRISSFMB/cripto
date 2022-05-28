@@ -1,0 +1,14 @@
+@include tablet {
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 300px 300px;
+  }
+}
+
+@include desktop {
+  .dashboard-grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 100px);
+  }
+}

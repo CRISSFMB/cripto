@@ -1,0 +1,16 @@
+.statistic {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  &__wrapper {
+    padding: 3rem;
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

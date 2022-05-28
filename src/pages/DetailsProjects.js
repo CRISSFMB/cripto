@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import Aside from '../components/Dashboard/aside/Aside';
-import MainDetail from '../components/MainDetail';
-import Statistics from '../components/Statistics';
-import Description from '../components/Description';
+
+import Statistics from '../components/detailsPorjects/statistics/Statistics';
+import Description from '../components/detailsPorjects/description/Description';
+import MainDetail from '../components/detailsPorjects/mainDetails/MainDetail';
 
 export default function DetailsProjects(props) {
   const params = useParams();

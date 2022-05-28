@@ -10,7 +10,7 @@ export default function Description(props) {
 
   return (
     <>
-      <h1>DESCRIPTION</h1>
+      <h1 className="center">DESCRIPTION</h1>
       {ListItems()}
     </>
   );

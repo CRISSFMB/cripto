@@ -80,7 +80,8 @@ function App() {
     <Router>
       <div className="content-container">
         <Header />
-        <div className="dashboard-grid">
+        {/* grid body are in the folder utils  */}
+        <div className="grid-body">
           <Sidebar />
           <Routes>
             <Route

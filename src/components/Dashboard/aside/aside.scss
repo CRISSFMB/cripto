@@ -19,13 +19,20 @@
 
   @include tablet {
     grid-column: 2 / 4;
-    height: 270px;
+    width: unset;
+    padding: unset;
+    margin-right: unset;
+    margin-left: unset;
   }
   @include desktop {
-    grid-column: 3 / 4;
+    grid-column: 8 / 10;
+    grid-row: 1/ 8;
     margin-top: auto;
     margin-bottom: auto;
-    height: 406px;
+    height: auto;
+    width: unset;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
