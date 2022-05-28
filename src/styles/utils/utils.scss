@@ -11,13 +11,15 @@
   .dashboard-grid {
     display: grid;
     grid-template-columns: 70px 1fr;
+    grid-template-rows: repeat(3, 300px);
   }
 }
+
 @include desktop {
   .dashboard-grid {
-    margin-top: 6rem;
+    display: grid;
     grid-template-columns: 70px 1fr 1fr;
-    gap: 3rem;
+    grid-template-rows: 485px 300px;
   }
 }
 
@@ -32,10 +34,10 @@
   background: #2c2f33;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: --2px -2px 7px 2px #3b4451, 6.22302px 6.22302px 18.6691px #000000;
+  box-shadow: -1px 2px 0px 0px #3b4451, 6.22302px 6.22302px 18.6691px #000000;
   transition: transform 0.4s;
   cursor: pointer;
-  letter-spacing: 1px;
+
   &:hover {
     transform: scale(1.15);
     color: white;

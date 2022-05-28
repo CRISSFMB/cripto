@@ -1,0 +1,48 @@
+.itemList {
+  display: flex;
+  justify-content: space-between;
+
+  height: 3rem;
+  background: #2c2f33;
+  box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+    6.22302px 6.22302px 18.6691px #000000;
+  border-radius: 25px;
+  padding: 1rem;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &__info,
+  &__name,
+  &__symbol {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: $white;
+    letter-spacing: 1px;
+  }
+
+  &__image {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 3px 1px 1px #4685e1, 6.22302px 6.22302px 18.6691px #979393;
+    border-radius: 25px;
+  }
+
+  &__button {
+    width: 65px;
+    @include tablet {
+      width: 11rem;
+      justify-content: space-around;
+    }
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-left: -8px;
+  }
+}

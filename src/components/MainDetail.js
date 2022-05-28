@@ -9,9 +9,5 @@ export default function MainDetail(props) {
     return ListComponent;
   };
 
-  return (
-    <>
-      <div>{ListItems()}</div>
-    </>
-  );
+  return <>{ListItems()}</>;
 }

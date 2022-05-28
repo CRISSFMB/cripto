@@ -10,10 +10,8 @@ export default function Description(props) {
 
   return (
     <>
-      <div>
-        <h1>DESCRIPTION</h1>
-        {ListItems()}
-      </div>
+      <h1>DESCRIPTION</h1>
+      {ListItems()}
     </>
   );
 }

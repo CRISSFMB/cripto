@@ -64,72 +64,36 @@ export default function Statistics(props) {
 
   return (
     <>
-      <div>
-        <div>
-          <h1>DEVELOPER PERFORMANCE</h1>
-          <div>
-            <h4>ITEMS</h4>
-            <h4>RESULTS</h4>
-          </div>
-          <div>
-            <div>
-              <p>forks:</p>
-              {ListItems().forks}
-            </div>
-            <div>
-              <p>stars:</p>
-              {ListItems().stars}
-            </div>
-            <div>
-              <p>subscribers:</p>
-              {ListItems().subscribers}
-            </div>
-            <div>
-              <p>total issues:</p>
-              {ListItems().total_issues}
-            </div>
-            <div>
-              <p>PR contributors:</p>
-              {ListItems().pull_request_contributors}
-            </div>
-            <div>
-              <p>PR merged:</p>
-              {ListItems().pull_requests_merged}
-            </div>
-            <div>
-              <p>Closed Issues:</p>
-              {ListItems().closed_issues}
-            </div>
-          </div>
-        </div>
+      <h1>DEVELOPER PERFORMANCE</h1>
+      <h4>ITEMS</h4>
+      <h4>RESULTS</h4>
+      <p>forks:</p>
+      {ListItems().forks}
+      <p>stars:</p>
+      {ListItems().stars}
+      <p>subscribers:</p>
+      {ListItems().subscribers}
+      <p>total issues:</p>
+      {ListItems().total_issues}
+      <p>PR contributors:</p>
+      {ListItems().pull_request_contributors}
+      <p>PR merged:</p>
+      {ListItems().pull_requests_merged}
+      <p>Closed Issues:</p>
+      {ListItems().closed_issues}
+      {/* proyecto statistics */}
 
-        {/* proyecto statistics */}
-        <div>
-          <h1>PROJECT STATISTICS</h1>
-          <div>
-            <h4>ITEMS</h4>
-            <h4>RESULTS</h4>
-          </div>
-          <div>
-            <div>
-              <p>Market cap rank:</p>
-              {ListItems().market_cap_rank}
-            </div>
-            <div>
-              <p>Coingecko rank:</p>
-              {ListItems().coingecko_rank}
-            </div>
-            <div>
-              <p>Coingecko score:</p>
-              {ListItems().coingecko_score}
-            </div>
-            <div>
-              <p>Developer score:</p>
-              {ListItems().developer_score}
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3>PROJECT STATISTICS</h3>
+      <h4>ITEMS</h4>
+      <h4>RESULTS</h4>
+      <p>Market cap rank:</p>
+      {ListItems().market_cap_rank}
+      <p>Coingecko rank:</p>
+      {ListItems().coingecko_rank}
+      <p>Coingecko score:</p>
+      {ListItems().coingecko_score}
+      <p>Developer score:</p>
+      {ListItems().developer_score}
     </>
   );
 }

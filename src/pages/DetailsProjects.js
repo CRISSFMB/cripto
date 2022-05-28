@@ -11,22 +11,16 @@ export default function DetailsProjects(props) {
   );
 
   return (
-    <>
-      <div>
-        <div>
-          <Aside info_aside={filter_info} />
-        </div>
-        <div>
-          <Statistics info_statistics={filter_info} />
-        </div>
-        {/* <div className={classes.Logo}><Main info_main={filter_info}/></div> */}
-        <div>
-          <MainDetail info_main={filter_info} />
-        </div>
-        <div>
-          <Description info_description={filter_info} />
-        </div>
-      </div>
-    </>
+    <div className="DetailsProjects">
+      <Aside info_aside={filter_info} />
+
+      <Statistics info_statistics={filter_info} />
+
+      {/* <div className={classes.Logo}><Main info_main={filter_info}/></div> */}
+
+      <MainDetail info_main={filter_info} />
+
+      <Description info_description={filter_info} />
+    </div>
   );
 }

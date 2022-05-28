@@ -16,6 +16,17 @@
     display: block;
     margin: 0 auto;
   }
+
+  @include tablet {
+    grid-column: 2 / 4;
+    height: 270px;
+  }
+  @include desktop {
+    grid-column: 3 / 4;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 406px;
+  }
 }
 
 .aside-grid-items {
