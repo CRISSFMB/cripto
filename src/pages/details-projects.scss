@@ -1,0 +1,10 @@
+@include desktop {
+  .DetailsProjects {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    @include desktop {
+      grid-template-columns: repeat(12, 93px);
+    }
+  }
+}

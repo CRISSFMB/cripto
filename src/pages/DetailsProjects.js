@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
-import Aside from '../components/Dashboard/aside/Aside';
 
 import Statistics from '../components/detailsPorjects/statistics/Statistics';
 import Description from '../components/detailsPorjects/description/Description';
 import MainDetail from '../components/detailsPorjects/mainDetails/MainDetail';
+import AsideDetail from '../components/detailsPorjects/asideDetail/AsideDetail';
 
 export default function DetailsProjects(props) {
   const params = useParams();
@@ -13,7 +13,7 @@ export default function DetailsProjects(props) {
 
   return (
     <div className="DetailsProjects">
-      <Aside info_aside={filter_info} />
+      <AsideDetail info_aside={filter_info} />
 
       <Statistics info_statistics={filter_info} />
 

@@ -14,7 +14,6 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   // background-color: $blue-dark;
   color: white;
-  width: 100vw;
   height: 100vh;
   background-color: $black-light;
 }
@@ -47,6 +46,14 @@ a {
 .grid-container {
   position: relative;
   overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem;
+  padding: 0;
 }
 
 @include desktop {

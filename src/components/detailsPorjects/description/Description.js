@@ -9,9 +9,9 @@ export default function Description(props) {
   };
 
   return (
-    <>
+    <div className="background-blue  description">
       <h1 className="center">DESCRIPTION</h1>
-      {ListItems()}
-    </>
+      <div className="description__wrapper ">{ListItems()}</div>
+    </div>
   );
 }

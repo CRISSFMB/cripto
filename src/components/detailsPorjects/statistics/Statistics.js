@@ -1,3 +1,5 @@
+import { Card } from './Card';
+
 export default function Statistics(props) {
   const ListItems = () => {
     const ListComponent = {};
@@ -63,41 +65,8 @@ export default function Statistics(props) {
   };
 
   return (
-    <div className="statistic background-blue">
-      <h2 className="center">DEVELOPER PERFORMANCE</h2>
-      <h4 className="center">ITEMS</h4>
-      <h4 className="center">RESULTS</h4>
-      <div className="statistic__wrapper grid-container background-blue">
-        <p>forks :</p>
-        {ListItems().forks}
-        <p>stars :</p>
-        {ListItems().stars}
-        <p>subscribers :</p>
-        {ListItems().subscribers}
-        <p>total issues :</p>
-        {ListItems().total_issues}
-        <p>PR contributors :</p>
-        {ListItems().pull_request_contributors}
-        <p>PR merged :</p>
-        {ListItems().pull_requests_merged}
-        <p>Closed Issues:</p>
-        {ListItems().closed_issues}
-        {/* proyecto statistics */}
-      </div>
-
-      <h3 className="center">PROJECT STATISTICS</h3>
-      <h4 className="center">ITEMS</h4>
-      <h4 className="center">RESULTS</h4>
-      <div className="statistic__wrapper background-blue grid-container">
-        <p>Market cap rank:</p>
-        {ListItems().market_cap_rank}
-        <p>Coingecko rank:</p>
-        {ListItems().coingecko_rank}
-        <p>Coingecko score:</p>
-        {ListItems().coingecko_score}
-        <p>Developer score:</p>
-        {ListItems().developer_score}
-      </div>
+    <div className="statistics grid-statistics ">
+      <Card ListItems={ListItems} subtitle="ITEMS" results="RESULTS" />
     </div>
   );
 }

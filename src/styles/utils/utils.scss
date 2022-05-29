@@ -1,7 +1,7 @@
 //containers
 .content-container {
   width: 90%;
-  max-width: 1700px;
+  max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
   height: 100%;
@@ -18,7 +18,7 @@
   .grid-body {
     display: grid;
     grid-template-columns: 70px 1fr;
-    // grid-template-rows: 485px 300px;
+    grid-template-columns: 70px 1fr;
   }
 }
 
@@ -59,4 +59,12 @@
   background-color: #0a2032c3;
   box-shadow: 0px 4px 4px 0px #00000040;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.padding-none {
+  padding: 0;
 }

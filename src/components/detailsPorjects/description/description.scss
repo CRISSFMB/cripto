@@ -1,0 +1,22 @@
+.description {
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  &__wrapper {
+    padding: 3rem;
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+
+@include desktop {
+  .description {
+    grid-column: 8 / 13;
+    grid-row: 5 / 8;
+    width: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+    margin: unset;
+  }
+}

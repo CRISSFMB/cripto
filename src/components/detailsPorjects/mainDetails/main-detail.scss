@@ -1,0 +1,20 @@
+.main-detail {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  @include desktop {
+    grid-column: 2 / 7;
+    grid-row: 6 / 6;
+    width: unset;
+    margin: unset;
+    padding: unset;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    img {
+      margin: 0 auto;
+      width: 90px;
+    }
+  }
+}
